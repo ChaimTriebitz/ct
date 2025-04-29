@@ -1,0 +1,31 @@
+$c1: #264653;
+$c2: #2a9d8f;
+$c3: #e9c46a;
+$c4: #f4a261;
+$c5: #e76f51;
+$c6: #7d7d7d;
+$c7: #bdbdbd;
+$g1: linear-gradient($c1, $c2, $c3);
+$g2: linear-gradient($c3, $c4, $c5);
+
+$mobile: 700px;
+
+:root {
+   --bg-color: white;
+   --text-color: #264653;
+   --header-color: #264653;
+   --scrollbar-bg-color: #e76f51;
+   --scrollbar-color: #f4a261;
+   --navbar-bg-color: #bdbdbd;
+   --navbar-text-color: #2a9d8f;
+}
+
+[data-theme='dark'] {
+   --bg-color: #264653;
+   --text-color: white;
+   --header-color: #2a9d8f;
+   --scrollbar-bg-color: #e76f51;
+   --scrollbar-color: #f4a261;
+   --navbar-bg-color: #7d7d7d;
+   --navbar-text-color: #e9c46a;
+}

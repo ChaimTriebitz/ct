@@ -1,0 +1,16 @@
+@use "styles/basics/vars.scss" as *;
+
+.theme {
+   &.dark {
+      svg {
+         fill: $c2;
+         stroke: $c1;
+      }
+   }
+   &.light {
+      svg {
+         fill: $c3;
+         stroke: $c4;
+      }
+   }
+}

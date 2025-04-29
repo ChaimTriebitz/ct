@@ -1,0 +1,39 @@
+@use '../basics/vars.scss' as *;
+
+button.hamberger {
+   display: flex;
+
+   svg {
+      height: 48px;
+   }
+
+   path {
+      stroke-width: 30;
+      stroke-linecap: round;
+      stroke: var(--navbar-text-color);
+      transition: all .5s ease-in-out;
+      fill: none;
+
+      &.top_bar,
+      &.bottom_bar {
+         stroke-dasharray: 240px 910px;
+      }
+
+      &.middle_bar {
+         stroke-dasharray: 240px 240px;
+      }
+   }
+
+   &.open {
+
+      .top_bar,
+      .bottom_bar {
+         stroke-dashoffset: -650px;
+      }
+
+      .middle_bar {
+         stroke-dasharray: 0px 220px;
+         stroke-dashoffset: -120px;
+      }
+   }
+}

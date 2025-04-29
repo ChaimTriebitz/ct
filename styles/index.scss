@@ -1,0 +1,14 @@
+// basics
+@use 'basics/_vars.scss';
+@use 'basics/_typography.scss';
+@use 'basics/_elements.scss';
+@use 'basics/_layout.scss';
+
+// pages
+@use 'pages/_home.scss';
+
+// component
+@use 'components/_Carousel.scss';
+@use 'components/_Hamberger.scss';
+@use 'components/_Theme.scss';
+@use 'components/_NavBar.scss';
