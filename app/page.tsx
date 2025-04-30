@@ -1,8 +1,108 @@
+import { Stack } from "@/components";
+
 export default function Home() {
    return (
       <main className="main home">
-         <h1>Welcome To My Portfolio</h1>
-         
+         <section>
+            <h1>Chaim Triebitz</h1>
+            <h3>Fullstack Developer | JavaScript, React, Node.js, MongoDB</h3>
+            <p>Welcome to my portfolio! I build modern, performant web applications using MERN stack and Next.js.</p>
+         </section>
+         <section>
+            <Stack />
+         </section>
+         <section>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+         </section>
+         <section>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+         </section>
+         <section>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+         </section>
+         <section>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+         </section>
+         <section>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+         </section>
+         <section>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+            <h1>Welcome To My Portfolio</h1>
+         </section>
+
+
       </main>
    )
 }

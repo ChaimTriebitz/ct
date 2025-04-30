@@ -9,7 +9,18 @@ nav.nav-bar {
 
    a {
       font-weight: 600;
+      position: relative;
+      span{
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 2px;
+      background: var(--navbar-text-color);
    }
+   }
+
+
 
    @media (max-width: $mobile) {
       position: absolute;

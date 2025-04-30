@@ -12,28 +12,24 @@ export function Footer() {
                title={'call me'}
             >
                <span className="svg-animate">{svgs.phone}</span>
-               <p>(050) 909-8589</p>
             </a>
             <a 
                href="https://wa.me/972509098589"
                title={'message me'}
             >
                <span className="svg-animate">{svgs.whatsapp}</span>
-               <p>(+972) 5-0909-8589</p>
             </a>
             <a 
                href={`mailto:ctriebitz@gmail.com`}
                title={'mail me'}
             >
-               <span className="svg-animate">{svgs.mail}</span>
-               <p>ctriebitz@gmail.com</p>
+               <span className="svg-animate">{svgs.gmail}</span>
             </a>
             <a 
                href={`https://www.linkedin.com/in/chaim-triebitz-495190258`}
                title={'mail me'}
             >
                <span className="svg-animate">{svgs.linkedin}</span>
-               <p>chaim-triebitz-495190258</p>
             </a>
          </div>
       </footer>

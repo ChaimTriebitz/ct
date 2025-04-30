@@ -16,6 +16,7 @@
 html,
 body {
    height: 100%;
+   overflow: hidden;
 }
 
 html {
@@ -44,7 +45,8 @@ footer,
 main,
 nav,
 form,
-button {
+button,
+a {
    display: flex;
    flex-direction: column;
    gap: 0.5em;

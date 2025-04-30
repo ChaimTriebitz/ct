@@ -1,7 +1,10 @@
-import {imgs}from './imgs'
-import {svgs} from './svgs'
+import { imgs } from './imgs'
+import { svgs } from './svgs'
+import { svgMap } from './svgMap.js'
+
 
 export {
    imgs,
-   svgs
+   svgs,
+   svgMap,
 }

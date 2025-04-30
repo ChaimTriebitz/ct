@@ -1,0 +1,25 @@
+footer.footer {
+   background: var(--navbar-bg-color);
+   color: var(--navbar-text-color);
+   padding: 0.5em;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   z-index: 100;
+   justify-content: space-between;
+   align-items: center;
+
+   .media {
+      flex-direction: row;
+
+      a {
+         align-items: center;
+      }
+
+      svg {
+         height: 25px;
+         width: 25px;
+      }
+   }
+}

@@ -1,3 +1,4 @@
+// colors
 $c1: #264653;
 $c2: #2a9d8f;
 $c3: #e9c46a;
@@ -5,27 +6,48 @@ $c4: #f4a261;
 $c5: #e76f51;
 $c6: #7d7d7d;
 $c7: #bdbdbd;
+
+// gradients
 $g1: linear-gradient($c1, $c2, $c3);
 $g2: linear-gradient($c3, $c4, $c5);
 
+// breakpoints
 $mobile: 700px;
+$tablet: 900px;
+$desktop: 1200px;
 
+// light theme
 :root {
    --bg-color: white;
-   --text-color: #264653;
-   --header-color: #264653;
-   --scrollbar-bg-color: #e76f51;
-   --scrollbar-color: #f4a261;
-   --navbar-bg-color: #bdbdbd;
-   --navbar-text-color: #2a9d8f;
+   --text-color: #{$c1};
+   --header-color: #{$c1};
+   --scrollbar-bg-color: #{$c5};
+   --scrollbar-color: #{$c4};
+   --navbar-bg-color: #{$c7};
+   --navbar-text-color: #{$c2};
 }
 
+// dark theme
 [data-theme='dark'] {
-   --bg-color: #264653;
+   --bg-color: #{$c1};
    --text-color: white;
-   --header-color: #2a9d8f;
-   --scrollbar-bg-color: #e76f51;
-   --scrollbar-color: #f4a261;
-   --navbar-bg-color: #7d7d7d;
-   --navbar-text-color: #e9c46a;
+   --header-color: #{$c2};
+   --scrollbar-bg-color: #{$c5};
+   --scrollbar-color: #{$c4};
+   --navbar-bg-color: #{$c6};
+   --navbar-text-color: #{$c3};
 }
+
+// layout
+@media (max-width: $mobile) {
+   :root {
+      --header-height: 50px;
+   }
+}
+
+@media (min-width: $mobile) {
+   :root {
+      --header-height: 70px;
+   }
+}
+
