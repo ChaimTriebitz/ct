@@ -11,7 +11,6 @@ export function RotatingIconExample() {
       <CanvasThreeJs>
         <RotatingIcon
           svgPath={svgPath}
-          color="#ff0000"
           size={0.5}
           rotationSpeed={0.5}
         />

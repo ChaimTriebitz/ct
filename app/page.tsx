@@ -26,7 +26,7 @@ export default function Home() {
         {/* <SVG /> */}
         <CanvasThreeJs>
           <RotatingIcon svgPath="./stack/baba2.glb" />
-          {/* <Scene /> */}
+          <Scene />
           {/* <ModelLoader /> */}
         </CanvasThreeJs>
       </section>
