@@ -11,14 +11,8 @@ main.main {
 
    h1 {
       text-align: center;
-      // -webkit-text-stroke: 1px var(--bg-color);
-      // -webkit-text-fill-color: var(--text-color);
       color: var(--header-color);
-      text-shadow:
-         5px 5px 0 var(--bg-color),
-         -1px -1px 0 var(--bg-color),
-         1px -1px 0 var(--bg-color),
-         -1px 1px 0 var(--bg-color),
-         1px 1px 0 var(--bg-color);
+
    }
 }
+

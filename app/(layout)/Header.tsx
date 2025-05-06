@@ -17,14 +17,14 @@ export function Header() {
    return (
       <header className="layout header">
          <Image
-            src="/logo.svg"
+            src="/ME2.jpg"
             alt="logo"
             width={isMobile ? 35 : 50}
-            height={isMobile ? 35 : 50}
+            height={isMobile ? 50 : 50}
          />
          <Theme />
-         <NavBar links={links} />
-         {isMobile && <Hamberger />}
+         {/* <NavBar links={links} />
+         {isMobile && <Hamberger />} */}
       </header>
    );
 }
