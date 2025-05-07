@@ -2,7 +2,6 @@
 import { svgs } from "@/assets";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { RotatingIcon } from "./threejs/RotatingIcon";
 
 export function Stack() {
    const [isVisible, setIsVisible] = useState(false);

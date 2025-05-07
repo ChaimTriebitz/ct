@@ -6,11 +6,11 @@ import { Theme } from "./Theme";
 import { Stack } from "./Stack";
 import { SVG } from "./SVG";
 import { Button } from "./Button";
+import { StackGlobe } from "./StackGlobe";
 // THREEJS 
-import { Scene } from "./threejs/Scene";
 import { CanvasThreeJs } from "./threejs/CanvasThreeJs";
-import { RotatingIcon } from "./threejs/RotatingIcon";
-import { ModelLoader } from "./threejs/ModelLoader";
+import { Scene } from "./threejs/Scene";
+import { TechIcon } from "./threejs/TechIcon";
 
 export {
    Button,
@@ -22,7 +22,7 @@ export {
    Stack,
    CanvasThreeJs,
    Scene,
-   ModelLoader,
-   RotatingIcon,
    SVG,
+   StackGlobe,
+   TechIcon,
 };
