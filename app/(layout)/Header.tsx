@@ -10,7 +10,7 @@ export function Header() {
 
    const links: LinkProp[] = [
       { name: "Home", href: "/" },
-      { name: "About", href: "/about" },
+      { name: "Stack", href: "/stack" },
       { name: "Contact", href: "/contact" },
    ]
 
@@ -22,9 +22,9 @@ export function Header() {
             width={isMobile ? 35 : 50}
             height={isMobile ? 50 : 50}
          />
+         <NavBar links={links} />
          <Theme />
-         {/* <NavBar links={links} />
-         {isMobile && <Hamberger />} */}
+         {/* {isMobile && <Hamberger />} */}
       </header>
    );
 }

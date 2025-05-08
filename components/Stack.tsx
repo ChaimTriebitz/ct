@@ -1,5 +1,5 @@
 "use client";
-import { svgs } from "@/assets";
+import { svgMap } from "@/assets";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
@@ -40,15 +40,28 @@ export function Stack() {
    };
 
    const icons = [
-      svgs.reactjs,
-      svgs.nextjs,
-      svgs.mongodb,
-      svgs.nodejs,
-      svgs.scss,
-      svgs.css,
-      svgs.html,
-      svgs.js,
-      svgs.expressjs,
+      svgMap.stack.reactjs,
+      svgMap.stack.nextjs,
+      svgMap.stack.mongodb,
+      svgMap.stack.nodejs,
+      svgMap.stack.scss,
+      svgMap.stack.css,
+      svgMap.stack.html,
+      svgMap.stack.js,
+      svgMap.stack.express,
+      svgMap.stack.typescript,
+      svgMap.stack.git,
+      svgMap.stack.github,
+      svgMap.stack.docker,
+      svgMap.stack.npm,
+      svgMap.stack.stripe,
+      svgMap.stack.redux,
+      svgMap.stack.redis,
+      svgMap.stack.prisma,
+      svgMap.stack.postgresql,
+      svgMap.stack.mysql,
+      svgMap.stack.json,
+      
    ];
 
    const tripledIcons = [...icons, ...icons, ...icons];

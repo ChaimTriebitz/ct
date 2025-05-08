@@ -1,15 +1,9 @@
 "use client";
+import { svgMap } from "@/assets";
 import {
    Button,
-   CanvasThreeJs,
    FlipCard,
-   ModelLoader,
-   RotatingIcon,
-   Scene,
-   Stack,
-   SVG,
 } from "@/components";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -18,13 +12,16 @@ export default function Home() {
          <h1>Hello World</h1>
          {/* <FlipCard image={{ src: "/ME2.jpg", alt: "me" }}>
             <h1>Chaim Triebitz</h1>
+            <h2>Fullstack Developer</h2>
             <h3>Fullstack Developer</h3>
-            <p>
-               Welcome to my portfolio! I build modern, performant web applications
-               using MERN stack and Next.js.
-            </p>
+            <p>I build modern, performant web applications using the latest best stack and technology <span>🚀</span></p>
          </FlipCard> */}
-         <Link href="/stack-overview"><Button name="CHECKOUT MY STACK"/></Link>
+         <div style={{ flexDirection: 'row' }}>
+            {Object.entries(svgMap.stack).map(([key, icon]) => (
+               <div style={{ width: '50px' }} key={key}>{icon}</div>
+            ))}
+         </div>
+
       </main>
    );
 }

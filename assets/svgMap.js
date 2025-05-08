@@ -12,5 +12,17 @@ export const svgMap = {
       express: svgs.expressjs,
       mongodb: svgs.mongodb,
       nextjs: svgs.nextjs,
+      typescript: svgs.typescript,
+      git: svgs.git,
+      github: svgs.github,
+      docker: svgs.docker,
+      npm: svgs.npm,
+      stripe: svgs.stripe,
+      redux: svgs.redux,
+      redis: svgs.redis,
+      prisma: svgs.prisma,
+      postgresql: svgs.postgresql,
+      mysql: svgs.mysql,
+      json: svgs.json
    }
 }

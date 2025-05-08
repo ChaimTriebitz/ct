@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { LinkProp } from '@/types'
 import { usePathname } from 'next/navigation'
 import { motion } from 'framer-motion'
+import { Button } from './Button'
 
 
 interface Props {
@@ -16,25 +17,11 @@ export function NavBar({ links }: Props) {
       <nav className='nav-bar'>
          {links.map((link) => (
             <Link
-               className={pathname === link.href ? 'link active' : 'link'}
+               style={{ width: `${(100 / links.length)}%` }}
                key={link.name}
                href={link.href}
             >
-               {link.name}
-               <motion.span
-                  initial={false}
-                  className="underline"
-                  animate={{
-                     opacity: pathname === link.href ? 1 : 0,
-                     scaleX: pathname === link.href ? 1 : 0,
-                  }}
-                  transition={{
-                     type: 'spring',
-                     damping: 12.5,
-                     duration: 0.25,
-                     bounce: 100,
-                  }}
-               />
+               <Button name={link.name} active={pathname === link.href} />
             </Link>
          ))}
       </nav>

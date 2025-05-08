@@ -9,36 +9,64 @@ import { TechIcon } from "./TechIcon";
 export const Scene = () => {
   const meshRef = useRef<Mesh>(null!);
   const techRefs = {
-    reactjs: useRef<Group>(null!),
-    nextjs: useRef<Group>(null!),
-    nodejs: useRef<Group>(null!),
-    express: useRef<Group>(null!),
-    mongodb: useRef<Group>(null!),
-    js: useRef<Group>(null!),
-    scss: useRef<Group>(null!),
+   // js: useRef<Group>(null!),
+   // nextjs: useRef<Group>(null!),
+   //  reactjs: useRef<Group>(null!),
+   //  nodejs: useRef<Group>(null!),
+   //  express: useRef<Group>(null!),
+   //  mongodb: useRef<Group>(null!),
+   //  scss: useRef<Group>(null!),
+   //  css: useRef<Group>(null!),
+   //  html: useRef<Group>(null!),
+   //  typescript: useRef<Group>(null!),
+   //  git: useRef<Group>(null!),
+   //  github: useRef<Group>(null!),
+   //  docker: useRef<Group>(null!),
+   //  npm: useRef<Group>(null!),
+   //  stripe: useRef<Group>(null!),
+   //  redux: useRef<Group>(null!),
+   //  redis: useRef<Group>(null!),
+   //  prisma: useRef<Group>(null!),
+   //  postgresql: useRef<Group>(null!),
+   //  mysql: useRef<Group>(null!),
+   //  json: useRef<Group>(null!),
   };
 
   const techPositions: Record<string, [number, number, number]> = {
-    reactjs: [-0.7, 0.3, 0],
-    nextjs: [0.7, -0.3, 0],
-    nodejs: [0, 0.6, 0.5],
-    express: [0, -0.6, 0.5],
-    mongodb: [0.5, 0.4, 0.8],
-    js: [0.5, -0.4, 1.0],
-    scss: [-0.5, 0.4, 1.0],
+    reactjs: [0.2, 0.2, 0.4],
+    nextjs: [-0.4, -0.6, -0.4],
+    nodejs: [0.6, -0.2, 0.2],
+    express: [-0.6, 0.6, -0.2],
+    mongodb: [0.4, 0.6, 0.4],
+    js: [-0.2, -0.2, 0.6],
+    scss: [0.4, -0.4, -0.4],
+    html: [0.2, -0.6, -0.6],
+    css: [0.6, 0.2, -0.2],
+    typescript: [-0.4, 0.4, 0.6],
+    git: [-0.6, -0.4, 0.4],
+    github: [0.6, -0.6, 0.2],
+    docker: [-0.2, 0.6, -0.4],
+    npm: [0.4, 0.2, -0.6],
+    stripe: [-0.4, -0.2, -0.6],
+    redux: [0.2, 0.6, 0.2],
+    redis: [-0.6, 0.2, 0.6],
+    prisma: [0.6, 0.4, -0.2],
+    postgresql: [-0.2, -0.6, 0.4],
+    mysql: [0.4, -0.2, -0.4],
+    json: [-0.4, 0.2, -0.2],
   };
 
   useFrame(() => {
     if (meshRef.current) {
-      meshRef.current.rotation.x += 0.005;
-      meshRef.current.rotation.y += 0.005;
+      // meshRef.current.rotation.x += 0.5;
+      // meshRef.current.rotation.y += 0.5;
     }
 
-    Object.values(techRefs).forEach((ref) => {
-      if (ref.current) {
-        ref.current.rotation.y += 0.01;
-      }
-    });
+   //  Object.values(techRefs).forEach((ref) => {
+   //    if (ref.current) {
+   //      ref.current.rotation.y += 0.01;
+   //    }
+   //  });
   });
 
   return (
@@ -46,14 +74,14 @@ export const Scene = () => {
       <OrbitControls
         enableZoom={false}
         enablePan={false}
-        minPolarAngle={Math.PI / 3}
-        maxPolarAngle={Math.PI / 1.5}
-        minDistance={Math.PI}
-        maxDistance={Math.PI}
+        minPolarAngle={Math.PI / 6}
+        maxPolarAngle={(Math.PI * 5) / 6}
+        minDistance={2}
+        maxDistance={4}
       />
       <group scale={[1, 1, 1]} position={[0, 0, 0]}>
         <mesh ref={meshRef}>
-          <sphereGeometry args={[1.5, 64, 64]} />
+          <sphereGeometry args={[2.0, 64, 64]} />
           <meshStandardMaterial
             color="#ffffff"
             transparent
@@ -64,13 +92,12 @@ export const Scene = () => {
           />
         </mesh>
         <mesh>
-          <sphereGeometry args={[1.5, 32, 32]} />
+          <sphereGeometry args={[2.0, 32, 32]} />
           <meshBasicMaterial
-            color="#2a9d8f"
-            transparent
+            color="#264653"
+            blendColor={"#2a9d8f"}
             wireframe
-            blendColor={"#264653"}
-            opacity={0.2}
+            opacity={1}
           />
         </mesh>
         {Object.entries(svgMap.stack).map(([key, icon]) => (

@@ -4,8 +4,8 @@ import React from "react";
 
 export default function StackOverview() {
   return (
-    <div className="stack-overview">
+    <main className="main stack-overview">
       <StackGlobe />
-    </div>
+    </main>
   );
 }
