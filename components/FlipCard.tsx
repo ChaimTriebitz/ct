@@ -15,6 +15,7 @@ export function FlipCard({ image, children }: { image: ImageProps, children: Rea
                      src={image.src || ''}
                      alt={image.src}
                      fill
+                     style={{ objectFit: "fill" }}
                   />
                   
                   <motion.div

@@ -12,16 +12,11 @@ export function Header() {
       { name: "Home", href: "/" },
       { name: "Stack", href: "/stack" },
       { name: "Contact", href: "/contact" },
+      { name: "Projects", href: "/projects" },
    ]
 
    return (
       <header className="layout header">
-         <Image
-            src="/ME2.jpg"
-            alt="logo"
-            width={isMobile ? 35 : 50}
-            height={isMobile ? 50 : 50}
-         />
          <NavBar links={links} />
          <Theme />
          {/* {isMobile && <Hamberger />} */}
