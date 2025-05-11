@@ -51,7 +51,7 @@ const ProjectsPage = () => {
     <main className="main projects">
       <h1>My Projects</h1>
       <section>
-        {projects.map((project, index) => (
+        {projects.map((project) => (
           <FlipCard
             image={{ src: project.imageUrl, alt: project.title }}
             key={project.id}

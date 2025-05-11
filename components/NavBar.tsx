@@ -1,31 +1,27 @@
-'use client'
-import Link from 'next/link'
-import { LinkProp } from '@/types'
-import { usePathname } from 'next/navigation'
-import { motion } from 'framer-motion'
-import { Button } from './Button'
-
+"use client";
+import Link from "next/link";
+import { LinkProp } from "@/types";
+import { usePathname } from "next/navigation";
+import { Button } from "./Button";
 
 interface Props {
-   links: LinkProp[];
+  links: LinkProp[];
 }
 
 export function NavBar({ links }: Props) {
-   const pathname = usePathname()
+  const pathname = usePathname();
 
-   return (
-      <nav className='nav-bar'>
-         {links.map((link) => (
-            <Link
-               style={{ width: `${(100 / links.length)}%` }}
-               key={link.name}
-               href={link.href}
-            >
-               <Button name={link.name} active={pathname === link.href} />
-            </Link>
-         ))}
-      </nav>
-   );
+  return (
+    <nav className="nav-bar">
+      {links.map((link) => (
+        <Link
+          style={{ width: `${100 / links.length}%` }}
+          key={link.name}
+          href={link.href}
+        >
+          <Button name={link.name} active={pathname === link.href} />
+        </Link>
+      ))}
+    </nav>
+  );
 }
-
-

@@ -60,11 +60,12 @@ export const Scene = () => {
       meshRef.current.rotation.y += 0.5;
     }
 
-    //  Object.values(techRefs).forEach((ref) => {
-    //    if (ref.current) {
-    //      ref.current.rotation.y += 0.01;
-    //    }
-    //  });
+    Object.values(techRefs).forEach((ref) => {
+      if (ref.current) {
+        const randomSpeed = Math.random() * (0.04 - 0.02) + 0.02;
+        ref.current.rotation.y += randomSpeed;
+      }
+    });
   });
 
   return (
