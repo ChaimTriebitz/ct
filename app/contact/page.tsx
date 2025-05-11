@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 const ContactPage = () => {
@@ -10,7 +12,9 @@ const ContactPage = () => {
     <div className="contact-container">
       <section className="contact-hero">
         <h1>Get in Touch</h1>
-        <p className="subtitle">Let&apos;s work together on your next project</p>
+        <p className="subtitle">
+          Let&apos;s work together on your next project
+        </p>
       </section>
 
       <section className="contact-content">
@@ -83,4 +87,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage; 
+export default ContactPage;
