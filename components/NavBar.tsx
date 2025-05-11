@@ -24,4 +24,4 @@ export function NavBar({ links }: Props) {
       ))}
     </nav>
   );
-}
+} 

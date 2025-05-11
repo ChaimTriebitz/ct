@@ -85,9 +85,8 @@ const ProjectsPage = () => {
           </FlipCard>
         ))}
       </section>
-      {/* <section style={{ height: "100px" }}></section> */}
     </main>
   );
 };
 
-export default ProjectsPage;
+export default ProjectsPage; 
