@@ -22,7 +22,6 @@ export const svgMap = {
       redis: svgs.redis,
       prisma: svgs.prisma,
       postgresql: svgs.postgresql,
-      mysql: svgs.mysql,
       json: svgs.json
    }
 }

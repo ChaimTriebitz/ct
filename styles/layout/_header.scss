@@ -1,7 +1,7 @@
 
 header.header {
    background: var(--navbar-bg-color);
-   padding: 0.5em;
+   padding: 1em;
    position: fixed;
    top: 0;
    left: 0;
@@ -11,4 +11,9 @@ header.header {
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
+
+   .nav-bar{
+   flex: 1;
+   }
+
 }

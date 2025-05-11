@@ -2,6 +2,7 @@
 import { FlipCard } from "@/components";
 import React from "react";
 import { ProjectProp } from "@/types";
+import { svgs } from "@/assets";
 
 const ProjectsPage = () => {
   const projects: ProjectProp[] = [
@@ -10,7 +11,8 @@ const ProjectsPage = () => {
       description: "Authenticated crud table app with connected to a database",
       technologies: ["React", "Node.js", "MongoDB"],
       imageUrl: "/projects/proj.crud-table.png",
-      githubUrl: "https://github.com/ChaimTriebitz/vito-front",
+      githubUrl: "https://github.com/ChaimTriebitz/crud-table-front",
+      githubUrl2: "https://github.com/ChaimTriebitz/crud-table-back",
       liveUrl: "https://vito-front.onrender.com/",
       id: 1,
     },
@@ -25,14 +27,23 @@ const ProjectsPage = () => {
       id: 2,
     },
     {
+      title: "LEWYER WEBSITE",
+      description: "Website for a lewyer with some cool animations",
+      technologies: ["animation", "SCSS", "responsive"],
+      imageUrl: "/projects/proj.lewyer.png",
+      githubUrl: "https://github.com/ChaimTriebitz/freiman-frontend",
+      liveUrl: "https://www.fraiman-law-firm.com/",
+      id: 3,
+    },
+    {
       title: "TRIP EXPERIENCE SHARING APP",
       description:
         "Trip experience sharing app with uploading images to cloudinary games and other",
-      technologies: ["Cloudinary", "canvas", "express"],
+      technologies: ["cloudinary", "canvas", "express"],
       imageUrl: "/projects/proj.trip.png",
       githubUrl: "https://github.com/ChaimTriebitz/trip-frontend/",
       liveUrl: "https://trip-front-end.onrender.com/",
-      id: 2,
+      id: 4,
     },
   ];
 
@@ -48,9 +59,33 @@ const ProjectsPage = () => {
             <h1>{project.title}</h1>
             <h3>{project.technologies.join(", ")}</h3>
             <p>{project.description}</p>
+            <div className="links">
+              <div className="link">
+                {svgs.globe}
+                <a href={project.liveUrl} target="_blank">
+                  {project.liveUrl}
+                </a>
+              </div>
+              <div className="link">
+                {svgs.github}
+                <a href={project.githubUrl} target="_blank">
+                  {project.githubUrl}
+                </a>
+              </div>
+
+              {project.githubUrl2 && (
+                <div className="link">
+                  {svgs.github}
+                  <a href={project.githubUrl2} target="_blank">
+                    {project.githubUrl2}
+                  </a>
+                </div>
+              )}
+            </div>
           </FlipCard>
         ))}
       </section>
+      {/* <section style={{ height: "100px" }}></section> */}
     </main>
   );
 };

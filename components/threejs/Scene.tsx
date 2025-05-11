@@ -9,64 +9,62 @@ import { TechIcon } from "./TechIcon";
 export const Scene = () => {
   const meshRef = useRef<Mesh>(null!);
   const techRefs = {
-   // js: useRef<Group>(null!),
-   // nextjs: useRef<Group>(null!),
-   //  reactjs: useRef<Group>(null!),
-   //  nodejs: useRef<Group>(null!),
-   //  express: useRef<Group>(null!),
-   //  mongodb: useRef<Group>(null!),
-   //  scss: useRef<Group>(null!),
-   //  css: useRef<Group>(null!),
-   //  html: useRef<Group>(null!),
-   //  typescript: useRef<Group>(null!),
-   //  git: useRef<Group>(null!),
-   //  github: useRef<Group>(null!),
-   //  docker: useRef<Group>(null!),
-   //  npm: useRef<Group>(null!),
-   //  stripe: useRef<Group>(null!),
-   //  redux: useRef<Group>(null!),
-   //  redis: useRef<Group>(null!),
-   //  prisma: useRef<Group>(null!),
-   //  postgresql: useRef<Group>(null!),
-   //  mysql: useRef<Group>(null!),
-   //  json: useRef<Group>(null!),
+    js: useRef<Group>(null!),
+    nextjs: useRef<Group>(null!),
+    reactjs: useRef<Group>(null!),
+    nodejs: useRef<Group>(null!),
+    express: useRef<Group>(null!),
+    mongodb: useRef<Group>(null!),
+    scss: useRef<Group>(null!),
+    css: useRef<Group>(null!),
+    html: useRef<Group>(null!),
+    typescript: useRef<Group>(null!),
+    git: useRef<Group>(null!),
+    github: useRef<Group>(null!),
+    docker: useRef<Group>(null!),
+    npm: useRef<Group>(null!),
+    stripe: useRef<Group>(null!),
+    redux: useRef<Group>(null!),
+    redis: useRef<Group>(null!),
+    prisma: useRef<Group>(null!),
+    postgresql: useRef<Group>(null!),
+    json: useRef<Group>(null!),
   };
 
   const techPositions: Record<string, [number, number, number]> = {
-    reactjs: [0.2, 0.2, 0.4],
-    nextjs: [-0.4, -0.6, -0.4],
-    nodejs: [0.6, -0.2, 0.2],
-    express: [-0.6, 0.6, -0.2],
-    mongodb: [0.4, 0.6, 0.4],
-    js: [-0.2, -0.2, 0.6],
-    scss: [0.4, -0.4, -0.4],
-    html: [0.2, -0.6, -0.6],
-    css: [0.6, 0.2, -0.2],
-    typescript: [-0.4, 0.4, 0.6],
-    git: [-0.6, -0.4, 0.4],
-    github: [0.6, -0.6, 0.2],
-    docker: [-0.2, 0.6, -0.4],
-    npm: [0.4, 0.2, -0.6],
-    stripe: [-0.4, -0.2, -0.6],
-    redux: [0.2, 0.6, 0.2],
-    redis: [-0.6, 0.2, 0.6],
-    prisma: [0.6, 0.4, -0.2],
-    postgresql: [-0.2, -0.6, 0.4],
-    mysql: [0.4, -0.2, -0.4],
-    json: [-0.4, 0.2, -0.2],
+    reactjs: [0.75, 0.35, 0.75],
+    nextjs: [-0.15, -0.45, -0.15],
+    nodejs: [0.85, -0.25, 0.85],
+    express: [-0.55, 0.35, -0.55],
+    mongodb: [0.75, 0.25, 0.45],
+    js: [-0.55, -0.35, 0.75],
+    typescript: [-0.75, 0.45, 0.25],
+    scss: [0.35, -0.75, -0.45],
+    html: [0.75, -0.45, -0.25],
+    css: [0.75, 0.5, -0.75],
+    git: [-0.75, -0.45, 0.35],
+    github: [0.45, -0.75, 0.25],
+    docker: [-0.35, 0.75, -0.55],
+    npm: [0.75, 0.25, -0.45],
+    stripe: [-0.55, -0.35, -0.75],
+    redux: [0.25, 0.75, 0.55],
+    redis: [-0.75, 0.35, 0.85],
+    prisma: [0.45, 0.75, -0.35],
+    postgresql: [0.75, 0.25, 0.15],
+    json: [-0.45, 0.35, -0.75],
   };
 
   useFrame(() => {
     if (meshRef.current) {
-      // meshRef.current.rotation.x += 0.5;
-      // meshRef.current.rotation.y += 0.5;
+      meshRef.current.rotation.x += 0.5;
+      meshRef.current.rotation.y += 0.5;
     }
 
-   //  Object.values(techRefs).forEach((ref) => {
-   //    if (ref.current) {
-   //      ref.current.rotation.y += 0.01;
-   //    }
-   //  });
+    //  Object.values(techRefs).forEach((ref) => {
+    //    if (ref.current) {
+    //      ref.current.rotation.y += 0.01;
+    //    }
+    //  });
   });
 
   return (

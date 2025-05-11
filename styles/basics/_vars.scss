@@ -1,12 +1,15 @@
-// colors
-$c1: #264653;
+$c1: #264653; 
 $c2: #2a9d8f;
-$c3: #e9c46a;
-$c4: #f4a261;
-$c5: #e76f51;
-$c6: #7d7d7d;
-$c7: #bdbdbd;
+$c3: #8ecae6; 
+$c4: #219ebc; 
+$c5: #023047; 
+$c6: #1d3557; 
+$c7: #a8dadc;
+$c8: #f1faee; 
+$c9: #457b9d; 
+$c10: #0d3b66; 
 $c1-o90: #26465390;
+$c2-o90: #2a9d8f90;
 $c2-o50: #2a9d8f50;
 
 
@@ -24,9 +27,9 @@ $desktop: 1200px;
    --bg-color: white;
    --text-color: #{$c1};
    --header-color: #{$c1};
-   --scrollbar-bg-color: #{$c5};
-   --scrollbar-color: #{$c4};
-   --navbar-bg-color: #{$c6};
+   --scrollbar-bg-color: #{$c2};
+   --scrollbar-color: #{$c2-o90};
+   --navbar-bg-color: #{$c2};
    --navbar-text-color: #{$c2};
 }
 
@@ -35,8 +38,8 @@ $desktop: 1200px;
    --bg-color: #{$c1-o90};
    --text-color: white;
    --header-color: #{$c2};
-   --scrollbar-bg-color: #{$c5};
-   --scrollbar-color: #{$c4};
+   --scrollbar-bg-color: #{$c1};
+   --scrollbar-color: #{$c1-o90};
    --navbar-bg-color: #{$c1};
    --navbar-text-color: #{$c3};
 }
@@ -45,6 +48,7 @@ $desktop: 1200px;
 @media (max-width: $mobile) {
    :root {
       --header-height: 50px;
+      --footer-height: 70px;
       --gap-1: 0.25em;
       --gap-2: 0.5em;
       --gap-3: 1em;
@@ -56,6 +60,8 @@ $desktop: 1200px;
 @media (min-width: $mobile) {
    :root {
       --header-height: 70px;
+      --footer-height: 90px;
+
       --gap-1: 0.5em;
       --gap-2: 1em;
       --gap-3: 1.5em;
@@ -63,4 +69,3 @@ $desktop: 1200px;
       --gap-5: 3em;
    }
 }
-

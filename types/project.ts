@@ -4,7 +4,8 @@ export type ProjectProp = {
    technologies: string[];
    imageUrl: string;
    githubUrl: string;
+   githubUrl2?: string;
    liveUrl: string;
    id: number;
-   
+
 };
