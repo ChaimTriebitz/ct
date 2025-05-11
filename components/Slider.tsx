@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState, ReactNode } from "react";
+import { useEffect, useRef, useState, ReactNode, useCallback } from "react";
 
 interface SliderProps {
   children: ReactNode[];
@@ -14,11 +14,33 @@ export function Slider({ children, data, autoPlay = true }: SliderProps) {
   const [currSlideIdx, setCurrSlideIdx] = useState<number>(0);
   const slidesRef = useRef<HTMLDivElement | null>(null);
 
-  const handleResize = () => {
+  const handleResize = useCallback(() => {
     slides.forEach((slide, idx) => {
       slide.style.left = slides[0].getBoundingClientRect().width * idx + "px";
     });
-  };
+  }, [slides]);
+
+  const handleClick = useCallback(
+    (idx: number) => {
+      slidesRef.current?.classList?.add("transition");
+      if (idx === slides.length - 1) {
+        setTimeout(() => {
+          slidesRef.current?.classList?.remove("transition");
+          setCurrSlideIdx(0);
+        }, 500);
+      } else if (idx === 0) {
+        setTimeout(() => {
+          slidesRef.current?.classList?.remove("transition");
+          setCurrSlideIdx(slides.length - 1);
+        }, 500);
+      }
+      if (idx >= 0 && idx < slides.length) {
+        setCurrSlideIdx(idx);
+      }
+      handleResize();
+    },
+    [slides, handleResize]
+  );
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);
@@ -51,26 +73,7 @@ export function Slider({ children, data, autoPlay = true }: SliderProps) {
       handleClick(currSlideIdx + 1);
     }, 4000);
     return () => clearInterval(intervalId);
-  }, [slides, currSlideIdx, autoPlay, handleResize]);
-
-  const handleClick = (idx: number) => {
-    slidesRef.current?.classList?.add("transition");
-    if (idx === slides.length - 1) {
-      setTimeout(() => {
-        slidesRef.current?.classList?.remove("transition");
-        setCurrSlideIdx(0);
-      }, 500);
-    } else if (idx === 0) {
-      setTimeout(() => {
-        slidesRef.current?.classList?.remove("transition");
-        setCurrSlideIdx(slides.length - 1);
-      }, 500);
-    }
-    if (idx >= 0 && idx < slides.length) {
-      setCurrSlideIdx(idx);
-    }
-    handleResize();
-  };
+  }, [slides, currSlideIdx, autoPlay, handleResize, handleClick]);
 
   const handleTouchStart = (e: React.TouchEvent) => {
     const touchDown = e.touches[0].clientX;

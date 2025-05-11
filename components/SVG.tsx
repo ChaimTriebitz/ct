@@ -1,4 +1,4 @@
-import { motion, useAnimation, useInView, useScroll } from "framer-motion";
+import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 
 // const gridContainerVariants = {
@@ -34,11 +34,6 @@ export const SVG = () => {
 
   const isInView = useInView(containerRef, { once: true });
   const mainControls = useAnimation();
-
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start end", "end end"],
-  });
 
   useEffect(() => {
     if (isInView) {
