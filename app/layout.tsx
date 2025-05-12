@@ -1,106 +1,105 @@
-import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/styles/index.scss";
 import { Header } from "./(layout)/Header";
 import { Footer } from "./(layout)/Footer";
 
 const geistSans = Geist({
-   variable: "--font-geist-sans",
-   subsets: ["latin"],
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
 });
 
 const geistMono = Geist_Mono({
-   variable: "--font-geist-mono",
-   subsets: ["latin"],
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
 });
 
 export const metadata = {
-   title: "Portfolio",
-   description: "A portfolio of projects and technologies I've worked with",
-   applicationName: "CT Portfolio",
-   manifest: "/manifest.json",
-   icons: {
-      icon: [
-         { url: "/favicon.ico", sizes: "any" },
-         { url: "/icon.svg", type: "image/svg+xml" },
-         { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
-         { url: "/favicon-16x16.png", type: "image/png", sizes: "16x16" },
-         { url: "/favicon-96x96.png", type: "image/png", sizes: "96x96" },
-      ],
-      apple: [
-         {
-            url: "/icons/apple/apple-icon.png",
-            sizes: "180x180",
-            type: "image/png",
-         },
-      ],
-      other: [
-         {
-            rel: "mask-icon",
-            url: "/safari-pinned-tab.svg",
-            color: "#2c3e50",
-         },
-         {
-            rel: "android-chrome-192x192",
-            url: "/web-app-manifest-192x192.png",
-            sizes: "192x192",
-            type: "image/png",
-         },
-         {
-            rel: "android-chrome-512x512",
-            url: "/web-app-manifest-512x512.png",
-            sizes: "512x512",
-            type: "image/png",
-         },
-      ],
-   },
-   appleWebApp: {
-      title: "Shaarei Chesed Boutique Living",
-      statusBarStyle: "default",
-      startupImage: ["/apple-icon.png"],
-   },
-   openGraph: {
-      type: "website",
-      locale: "en_US",
-      url: "https://shaarei-chesed.com/",
-      siteName: "Shaarei Chesed Boutique Living",
-      title: "Shaarei Chesed Boutique Homes",
-      description:
-         "Join an exclusive residential development in Jerusalem's Shaarei Chesed. Boutique apartments, full customization, tax benefits, and a proven track record.",
-      images: [
-         {
-            url: "/web-app-manifest-512x512.png",
-            width: 512,
-            height: 512,
-            alt: "Shaarei Chesed Boutique Living Logo",
-         },
-      ],
-   },
-   twitter: {
-      card: "summary_large_image",
-      title: "Shaarei Chesed Boutique Homes",
-      description:
-         "Join an exclusive residential development in Jerusalem's Shaarei Chesed. Boutique apartments, full customization, tax benefits, and a proven track record.",
-      images: ["/web-app-manifest-512x512.png"],
-      creator: "@shaareichesed",
-   },
+  title: "Portfolio",
+  description: "A portfolio of projects and technologies I've worked with",
+  applicationName: "CT Portfolio",
+  manifest: "/manifest.json",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
+      { url: "/favicon-16x16.png", type: "image/png", sizes: "16x16" },
+      { url: "/favicon-96x96.png", type: "image/png", sizes: "96x96" },
+    ],
+    apple: [
+      {
+        url: "/icons/apple/apple-icon.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
+    ],
+    other: [
+      {
+        rel: "mask-icon",
+        url: "/safari-pinned-tab.svg",
+        color: "#2c3e50",
+      },
+      {
+        rel: "android-chrome-192x192",
+        url: "/web-app-manifest-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        rel: "android-chrome-512x512",
+        url: "/web-app-manifest-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
+    ],
+  },
+  appleWebApp: {
+    title: "Shaarei Chesed Boutique Living",
+    statusBarStyle: "default",
+    startupImage: ["/apple-icon.png"],
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://shaarei-chesed.com/",
+    siteName: "Shaarei Chesed Boutique Living",
+    title: "Shaarei Chesed Boutique Homes",
+    description:
+      "Join an exclusive residential development in Jerusalem's Shaarei Chesed. Boutique apartments, full customization, tax benefits, and a proven track record.",
+    images: [
+      {
+        url: "/web-app-manifest-512x512.png",
+        width: 512,
+        height: 512,
+        alt: "Shaarei Chesed Boutique Living Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Shaarei Chesed Boutique Homes",
+    description:
+      "Join an exclusive residential development in Jerusalem's Shaarei Chesed. Boutique apartments, full customization, tax benefits, and a proven track record.",
+    images: ["/web-app-manifest-512x512.png"],
+    creator: "@shaareichesed",
+  },
 };
 
 export default function RootLayout({
-   children,
+  children,
 }: Readonly<{
-   children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-   return (
-      <html lang="en">
-         <body
-            suppressHydrationWarning
-            className={`${geistSans.variable} ${geistMono.variable}`}
-         >
-            <Header />
-            {children}
-            <Footer />
-         </body>
-      </html>
-   );
+  return (
+    <html lang="en">
+      <body
+        suppressHydrationWarning
+        className={`${geistSans.variable} ${geistMono.variable}`}
+      >
+        <Header />
+        {children}
+        <Footer />
+      </body>
+    </html>
+  );
 }

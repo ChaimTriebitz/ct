@@ -6,19 +6,9 @@ import { OrbitControls } from "@react-three/drei";
 import { svgMap } from "@/assets/svgMap";
 import { TechIcon } from "./TechIcon";
 
-type IconProps = {
-  key: string;
-  position: [number, number, number];
-  ref: React.RefObject<Group>;
-  icon: React.ReactNode;
-};
-
 export const Scene = () => {
   const meshRef = useRef<Mesh>(null!);
-  const iconRefs = useMemo(
-    () => Object.keys(svgMap.stack).map(() => useRef<Group>(null!)),
-    []
-  );
+  const refs = Object.keys(svgMap.stack).map(() => useRef<Group>(null!));
 
   const icons = useMemo(
     () =>
@@ -27,14 +17,14 @@ export const Scene = () => {
         .map(([key, icon], index) => ({
           key,
           icon,
-          ref: iconRefs[index],
+          ref: refs[index],
           position: [
             Math.random() * 2 - 1,
             Math.random() * 2 - 1,
             Math.random() * 2 - 1,
           ] as [number, number, number],
         })),
-    [iconRefs]
+    [refs]
   );
 
   useFrame(() => {
