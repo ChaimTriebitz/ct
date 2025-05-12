@@ -8,7 +8,10 @@ import { TechIcon } from "./TechIcon";
 
 export const Scene = () => {
   const meshRef = useRef<Mesh>(null!);
-  const refs = Object.keys(svgMap.stack).map(() => useRef<Group>(null!));
+  const refs = useMemo(
+    () => Object.keys(svgMap.stack).map(() => useRef<Group>(null!)),
+    []
+  );
 
   const icons = useMemo(
     () =>
