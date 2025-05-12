@@ -5,7 +5,6 @@ export function Footer() {
 
    return (
       <footer className="layout footer">
-         <h6>Contect Me</h6>
          <div className='media'>
             <a 
                href={`tel:0509098589`}

@@ -1,21 +1,56 @@
-$c1: #264653; 
+$c1: #264653;
 $c2: #2a9d8f;
-$c3: #8ecae6; 
-$c4: #219ebc; 
-$c5: #023047; 
-$c6: #1d3557; 
+$c3: #8ecae6;
+$c4: #219ebc;
+$c5: #023047;
+$c6: #1d3557;
 $c7: #a8dadc;
-$c8: #f1faee; 
-$c9: #457b9d; 
-$c10: #0d3b66; 
+$c8: #f1faee;
+$c9: #457b9d;
+$c10: #0d3b66;
+// opacity 10%
+$c1-o10: #26465310;
+$c2-o10: #2a9d8f10;
+$c3-o10: #8ecae610;
+$c4-o10: #219ebc10;
+$c5-o10: #02304710;
+$c6-o10: #1d355710;
+$c7-o10: #a8dadc10;
+$c8-o10: #f1faee10;
+$c9-o10: #457b9d10;
+$c10-o10: #0d3b6610;
+// opacity 50%
+$c1-o50: #26465350;
+$c2-o50: #2a9d8f50;
+$c3-o50: #8ecae650;
+$c4-o50: #219ebc50;
+$c5-o50: #02304750;
+$c6-o50: #1d355750;
+$c7-o50: #a8dadc50;
+$c8-o50: #f1faee50;
+$c9-o50: #457b9d50;
+$c10-o50: #0d3b6650;
+// opacity 90%
 $c1-o90: #26465390;
 $c2-o90: #2a9d8f90;
-$c2-o50: #2a9d8f50;
-
+$c3-o90: #8ecae690;
+$c4-o90: #219ebc90;
+$c5-o90: #02304790;
+$c6-o90: #1d355790;
+$c7-o90: #a8dadc90;
+$c8-o90: #f1faee90;
+$c9-o90: #457b9d90;
+$c10-o90: #0d3b6690;
 
 // gradients
 $g1: linear-gradient($c1, $c2, $c6);
+$g1-o90: linear-gradient($c1-o90, $c2-o90, $c6-o90);
+$g1-o50: linear-gradient($c1-o50, $c2-o50, $c6-o50);
+$g1-o10: linear-gradient($c1-o10, $c2-o10, $c6-o10);
 $g2: linear-gradient($c3, $c4, $c5);
+$g2-o90: linear-gradient($c3-o90, $c4-o90, $c5-o90);
+$g2-o50: linear-gradient($c3-o50, $c4-o50, $c5-o50);
+$g2-o10: linear-gradient($c3-o10, $c4-o10, $c5-o10);
 
 // breakpoints
 $mobile: 700px;
@@ -24,31 +59,34 @@ $desktop: 1200px;
 
 // light theme
 :root {
-   --bg-color: white;
-   --text-color: #{$c1};
-   --header-color: #{$c1};
-   --scrollbar-bg-color: #{$c2};
-   --scrollbar-color: #{$c2-o90};
-   --navbar-bg-color: #{$c2};
-   --navbar-text-color: #{$c2};
+   --main-color: #{$g1-o50};
+   --txt-color: #{$c5};
+   --bars-color: #{$c2-o50};
+
+   --bg-home: linear-gradient(#26465399 50%,
+         #26465395 75%,
+         #26465310),
+      url('/me1.jpg');
 }
 
 // dark theme
 [data-theme='dark'] {
-   --bg-color: #{$c1-o90};
-   --text-color: white;
-   --header-color: #{$c2};
-   --scrollbar-bg-color: #{$c1};
-   --scrollbar-color: #{$c1-o90};
-   --navbar-bg-color: #{$c1};
-   --navbar-text-color: #{$c3};
+   --main-color: #{$g1};
+   --txt-color: #{$c8};
+   --bars-color: #{$c2};
+
+
+   --bg-home: linear-gradient(#26465399 50%,
+         #26465395 75%,
+         #26465300),
+      url('/me1.jpg');
 }
 
 // layout
 @media (max-width: $mobile) {
    :root {
-      --header-height: 50px;
-      --footer-height: 70px;
+      --header-height: 60px;
+      --footer-height: 60px;
       --gap-1: 0.25em;
       --gap-2: 0.5em;
       --gap-3: 1em;
@@ -59,8 +97,8 @@ $desktop: 1200px;
 
 @media (min-width: $mobile) {
    :root {
-      --header-height: 70px;
-      --footer-height: 90px;
+      --header-height: 80px;
+      --footer-height: 80px;
 
       --gap-1: 0.5em;
       --gap-2: 1em;

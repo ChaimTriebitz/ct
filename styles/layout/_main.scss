@@ -4,10 +4,7 @@ main.main {
    height: calc(100% - var(--header-height) - var(--footer-height));
    margin-top: var(--header-height);
    margin-bottom: var(--footer-height);
-
-   @media (max-width: $mobile) {
-      padding: 0.5em;
-   }
+   background: var(--main-color);
 
    section {
       overflow-y: auto;
@@ -15,7 +12,6 @@ main.main {
 
    h1 {
       text-align: center;
-      color: var(--header-color);
-
+      color: var(--txt-color);
    }
 }

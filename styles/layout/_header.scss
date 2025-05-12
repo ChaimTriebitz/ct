@@ -1,6 +1,7 @@
+@use '../basics/vars.scss' as *;
 
 header.header {
-   background: var(--navbar-bg-color);
+   background: var(--bars-color);
    padding: 1em;
    position: fixed;
    top: 0;
@@ -12,8 +13,14 @@ header.header {
    justify-content: space-between;
    align-items: center;
 
-   .nav-bar{
-   flex: 1;
+   @media (max-width: $mobile) {
+      padding: 0.5em;
+      top: unset;
+      bottom: 0;
+   }
+
+   .nav-bar {
+      flex: 1;
    }
 
 }
