@@ -8,8 +8,49 @@ import { TechIcon } from "./TechIcon";
 
 export const Scene = () => {
   const meshRef = useRef<Mesh>(null!);
-  const stackKeys = Object.keys(svgMap.stack);
-  const refs = stackKeys.map(() => useRef<Group>(null!));
+  const ref1 = useRef<Group>(null!);
+  const ref2 = useRef<Group>(null!);
+  const ref3 = useRef<Group>(null!);
+  const ref4 = useRef<Group>(null!);
+  const ref5 = useRef<Group>(null!);
+  const ref6 = useRef<Group>(null!);
+  const ref7 = useRef<Group>(null!);
+  const ref8 = useRef<Group>(null!);
+  const ref9 = useRef<Group>(null!);
+  const ref10 = useRef<Group>(null!);
+  const ref11 = useRef<Group>(null!);
+  const ref12 = useRef<Group>(null!);
+  const ref13 = useRef<Group>(null!);
+  const ref14 = useRef<Group>(null!);
+  const ref15 = useRef<Group>(null!);
+  const ref16 = useRef<Group>(null!);
+  const ref17 = useRef<Group>(null!);
+  const ref18 = useRef<Group>(null!);
+  const ref19 = useRef<Group>(null!);
+  const ref20 = useRef<Group>(null!);
+
+  const refs = [
+    ref1,
+    ref2,
+    ref3,
+    ref4,
+    ref5,
+    ref6,
+    ref7,
+    ref8,
+    ref9,
+    ref10,
+    ref11,
+    ref12,
+    ref13,
+    ref14,
+    ref15,
+    ref16,
+    ref17,
+    ref18,
+    ref19,
+    ref20,
+  ];
 
   const icons = useMemo(
     () =>
@@ -20,9 +61,9 @@ export const Scene = () => {
           icon,
           ref: refs[index],
           position: [
-            Math.random() * 2 - 1,
-            Math.random() * 2 - 1,
-            Math.random() * 2 - 1,
+            Math.random() * 1.5 - 1,
+            Math.random() * 1.5 - 1,
+            Math.random() * 1.5 - 1,
           ] as [number, number, number],
         })),
     [refs]
