@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useRef, useMemo } from "react";
 import { useFrame } from "@react-three/fiber";
 import { Mesh, Group } from "three";
 import { OrbitControls } from "@react-three/drei";
@@ -15,18 +15,27 @@ type IconProps = {
 
 export const Scene = () => {
   const meshRef = useRef<Mesh>(null!);
-  const icons = Object.entries(svgMap.stack)
-    .sort(() => Math.random() - 0.5)
-    .map(([key, icon]) => ({
-      key,
-      icon,
-      ref: useRef<Group>(null!),
-      position: [
-        Math.random() * 2 - 1,
-        Math.random() * 2 - 1,
-        Math.random() * 2 - 1,
-      ],
-    })) as IconProps[];
+  const iconRefs = useMemo(
+    () => Object.keys(svgMap.stack).map(() => useRef<Group>(null!)),
+    []
+  );
+
+  const icons = useMemo(
+    () =>
+      Object.entries(svgMap.stack)
+        .sort(() => Math.random() - 0.5)
+        .map(([key, icon], index) => ({
+          key,
+          icon,
+          ref: iconRefs[index],
+          position: [
+            Math.random() * 2 - 1,
+            Math.random() * 2 - 1,
+            Math.random() * 2 - 1,
+          ] as [number, number, number],
+        })),
+    [iconRefs]
+  );
 
   useFrame(() => {
     Object.values(icons).forEach((icon) => {
