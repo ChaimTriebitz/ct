@@ -13,7 +13,7 @@ const ProjectsPage = () => {
       imageUrl: "/projects/proj.crud-table.png",
       githubUrl: "https://github.com/ChaimTriebitz/crud-table-front",
       githubUrl2: "https://github.com/ChaimTriebitz/crud-table-back",
-      liveUrl: "https://vito-front.onrender.com/",
+      liveUrl: "https://vito-front.onrender.com/banks",
       id: 1,
     },
     {
@@ -37,10 +37,10 @@ const ProjectsPage = () => {
       id: 3,
     },
     {
-      title: "LEWYER WEBSITE",
-      description: "Website for a lewyer with some cool animations",
+      title: "LAWYER WEBSITE",
+      description: "Website for a lawyer with some cool animations",
       technologies: ["animation", "SCSS", "responsive"],
-      imageUrl: "/projects/proj.lewyer.png",
+      imageUrl: "/projects/proj.lawyer.png",
       githubUrl: "https://github.com/ChaimTriebitz/freiman-frontend",
       liveUrl: "https://www.fraiman-law-firm.com/",
       id: 4,

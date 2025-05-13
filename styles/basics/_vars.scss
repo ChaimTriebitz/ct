@@ -51,6 +51,8 @@ $g2: linear-gradient($c3, $c4, $c5);
 $g2-o90: linear-gradient($c3-o90, $c4-o90, $c5-o90);
 $g2-o50: linear-gradient($c3-o50, $c4-o50, $c5-o50);
 $g2-o10: linear-gradient($c3-o10, $c4-o10, $c5-o10);
+$g3: linear-gradient($c6, $c5, $c10);
+
 
 // breakpoints
 $mobile: 700px;
@@ -63,9 +65,9 @@ $desktop: 1200px;
    --txt-color: #{$c5};
    --bars-color: #{$c2-o50};
 
-   --bg-home: linear-gradient(#26465399 50%,
+   --bg-home: linear-gradient(#023047 0%,
          #26465395 75%,
-         #26465310),
+         #26465300),
       url('/me1.jpg');
 }
 
@@ -76,7 +78,7 @@ $desktop: 1200px;
    --bars-color: #{$c2};
 
 
-   --bg-home: linear-gradient(#26465399 50%,
+   --bg-home: linear-gradient(#023047 0%,
          #26465395 75%,
          #26465300),
       url('/me1.jpg');

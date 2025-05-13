@@ -5,9 +5,7 @@ import React from "react";
 export default function Stack() {
   return (
     <main className="main stack">
-      <section className="header">
-        <h1>My Stack</h1>
-      </section>
+      <h1>My Favorite Stack</h1>
       <StackGlobe />
       {/* <section>I Love to work with the following technologies:</section> */}
     </main>

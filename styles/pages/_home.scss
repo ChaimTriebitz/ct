@@ -1,56 +1,65 @@
 @use '../basics/vars.scss' as *;
 
+@keyframes gradientFlow {
+   0% {
+      background-position: 0% 50%;
+   }
+
+   50% {
+      background-position: 100% 50%;
+   }
+
+   100% {
+      background-position: 0% 50%;
+   }
+}
+
 .home {
    .home-section {
       background-image: var(--bg-home);
-      background-size: cover;
-      background-position: bottom;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
       height: 100%;
       width: 100%;
       text-align: center;
-      padding: 2rem;
-
-      h1,
-      h2,
-      h3 {
-         font-family: 'JetBrains Mono', monospace;
-         letter-spacing: -0.5px;
-      }
-
-      h1 {
-         font-size: 3.5rem;
-         font-weight: 700;
-         color: white;
-         margin-bottom: 1rem;
-         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-      }
-
-      h2 {
-         color: $c10;
-         font-size: 2.5rem;
-         font-weight: 600;
-         margin-bottom: 0.5rem;
-      }
+      padding: 1em;
+      font-family: 'JetBrains Mono', monospace;
+      letter-spacing: -0.5px;
+      max-width: 600px;
+      margin: 0 auto;
+      color: white;
+      font-weight: 700;
+      gap: 2em;
+      font-size: 1.2em;
 
       h3 {
-         color: $c4;
-         font-size: 1.5rem;
-         font-weight: 500;
-         margin-bottom: 1.5rem;
-         font-weight: 700;
+         background: linear-gradient(red,green,blue);
+         -webkit-background-clip: text;
+         background-clip: text;
+         color: transparent;
+         text-shadow:
+            2px 2px 4px rgba(0, 0, 0, 0.5),
+            -1px -1px 0 rgba(255, 255, 255, 0.3);
+         font-weight: 800;
       }
 
       p {
-         color: white;
-         font-size: 1.2rem;
-         line-height: 1.6;
-         max-width: 600px;
-         margin: 0 auto;
+         margin: auto;
+         text-align: left;
+         max-width: 75%;
+      }
 
-         span {
-            font-size: 1.4rem;
-            margin-left: 0.5rem;
-         }
+
+      .rocket {
+         display: inline-block;
+         margin-left: 4px;
+      }
+
+      @media (max-width: $mobile) {
+         background-size: cover;
+         gap: 1em;
+         padding: 0.5em;
       }
    }
 }

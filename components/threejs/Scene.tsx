@@ -27,7 +27,6 @@ export const Scene = () => {
   const ref17 = useRef<Group>(null!);
   const ref18 = useRef<Group>(null!);
   const ref19 = useRef<Group>(null!);
-  const ref20 = useRef<Group>(null!);
 
   const refs = [
     ref1,
@@ -49,7 +48,6 @@ export const Scene = () => {
     ref17,
     ref18,
     ref19,
-    ref20,
   ];
 
   const icons = useMemo(
@@ -88,7 +86,7 @@ export const Scene = () => {
       />
       <group scale={[1, 1, 1]} position={[0, 0, 0]}>
         <mesh ref={meshRef}>
-          <sphereGeometry args={[2, 64, 64]} />
+          <sphereGeometry args={[1.5, 64, 64]} />
           <meshStandardMaterial
             color="#ffffff"
             transparent
@@ -99,7 +97,7 @@ export const Scene = () => {
           />
         </mesh>
         <mesh>
-          <sphereGeometry args={[2, 16, 16]} />
+          <sphereGeometry args={[1.5, 16, 16]} />
           <meshBasicMaterial
             color="#264653"
             blendColor={"#2a9d8f"}
