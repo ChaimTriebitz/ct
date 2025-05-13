@@ -32,11 +32,17 @@
       gap: 2em;
       font-size: 1.2em;
 
+      h1,
+      h2 {
+         color: $white;
+      }
+
       h3 {
-         background: linear-gradient(red,green,blue);
+         background: linear-gradient(red, green, blue);
          -webkit-background-clip: text;
          background-clip: text;
          color: transparent;
+         -webkit-text-stroke: 1px white;
          text-shadow:
             2px 2px 4px rgba(0, 0, 0, 0.5),
             -1px -1px 0 rgba(255, 255, 255, 0.3);
@@ -44,6 +50,7 @@
       }
 
       p {
+         color: white;
          margin: auto;
          text-align: left;
          max-width: 75%;
