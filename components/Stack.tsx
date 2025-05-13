@@ -58,7 +58,6 @@ export function Stack() {
       svgMap.stack.redux,
       svgMap.stack.redis,
       svgMap.stack.prisma,
-      svgMap.stack.postgresql,
       svgMap.stack.json,
       
    ];
