@@ -13,16 +13,7 @@ main.main {
    >h1 {
       margin-top: 0.25em;
       text-align: center;
-      background: linear-gradient(45deg,
-            #264653,
-            #8ecae6,
-            #219ebc,
-            #a8dadc,
-            #f1faee);
-      background-size: 300% 300%;
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
+      color: var(--txt-color);
       animation: gradientFlow 8s ease infinite;
    }
 }
