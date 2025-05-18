@@ -97,7 +97,7 @@ export default function Home() {
           initial="hidden"
           animate="visible"
         >
-          {"I build modern, performant web applications using the latest best stack and technology"
+          {"I build modern, state-of-the-art, performant   web   applications, using  the  very  latest and  best stack technologies."
             .split("")
             .map((letter, index) => (
               <motion.span key={index} variants={child}>
