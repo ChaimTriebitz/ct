@@ -54,34 +54,34 @@ export const metadata = {
     ],
   },
   appleWebApp: {
-    title: "Shaarei Chesed Boutique Living",
+    title: "CT site",
     statusBarStyle: "default",
     startupImage: ["/apple-icon.png"],
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://shaarei-chesed.com/",
-    siteName: "Shaarei Chesed Boutique Living",
-    title: "Shaarei Chesed Boutique Homes",
+    url: "https://ct-site.dev",
+    siteName: "CT site",
+    title: "CT site",
     description:
-      "Join an exclusive residential development in Jerusalem's Shaarei Chesed. Boutique apartments, full customization, tax benefits, and a proven track record.",
+      "My portfolio showcases my work in web development, including projects, technologies, and skills. Explore my projects and get in touch.",
     images: [
       {
         url: "/web-app-manifest-512x512.png",
         width: 512,
         height: 512,
-        alt: "Shaarei Chesed Boutique Living Logo",
+        alt: "CT Portfolio Logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shaarei Chesed Boutique Homes",
+    title: "CT site",
     description:
-      "Join an exclusive residential development in Jerusalem's Shaarei Chesed. Boutique apartments, full customization, tax benefits, and a proven track record.",
+           "My portfolio showcases my work in web development, including projects, technologies, and skills. Explore my projects and get in touch.",
     images: ["/web-app-manifest-512x512.png"],
-    creator: "@shaareichesed",
+    creator: "@ct_sites",
   },
 };
 
