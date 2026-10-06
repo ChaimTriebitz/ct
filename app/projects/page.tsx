@@ -11,11 +11,7 @@ const ProjectsPage = () => {
       description:
         "Full-stack second-hand marketplace with search, filters, accounts, image uploads and responsive mobile experience",
       technologies: ["React", "Node.js", "MongoDB", "Cloudinary", "SCSS"],
-<<<<<<< HEAD
       imageUrl: "/projects/proj.altizachen.png",
-=======
-      imageUrl: "/logo.svg",
->>>>>>> 506804af5639190edf1eea51b1bf29249465f254
       githubUrl: "https://github.com/ChaimTriebitz/altizachen-frontend",
       githubUrl2: "https://github.com/ChaimTriebitz/altizachen-backend",
       liveUrl: "https://altizachen-frontend-ivory.vercel.app/",
@@ -24,7 +20,7 @@ const ProjectsPage = () => {
     {
       title: "CRUD TABLE APP",
       description: "Authenticated crud table app with connected to a database",
-      technologies: ["React", "Node.js", "MongoDB", "Reducer","context"],
+      technologies: ["React", "Node.js", "MongoDB", "Reducer", "context"],
       imageUrl: "/projects/proj.crud-table.png",
       githubUrl: "https://github.com/ChaimTriebitz/crud-table-front",
       githubUrl2: "https://github.com/ChaimTriebitz/crud-table-back",
@@ -45,7 +41,7 @@ const ProjectsPage = () => {
       title: "REAL ESTATE LANDING PAGE 2",
       description:
         "Landing page for a real estate company with a modern design and animations",
-      technologies: ["Next.js", "Tailwind CSS", "TypeScript","Framer Motion"],
+      technologies: ["Next.js", "Tailwind CSS", "TypeScript", "Framer Motion"],
       imageUrl: "/projects/proj.shaarei-chesed.png",
       githubUrl: "https://github.com/ChaimTriebitz/shaarei-chesed-frontend",
       liveUrl: "https://shaarei-chesed-frontend.vercel.app/",
@@ -114,4 +110,4 @@ const ProjectsPage = () => {
   );
 };
 
-export default ProjectsPage; 
+export default ProjectsPage;
