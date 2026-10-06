@@ -11,7 +11,7 @@ const ProjectsPage = () => {
       description:
         "Full-stack second-hand marketplace with search, filters, accounts, image uploads and responsive mobile experience",
       technologies: ["React", "Node.js", "MongoDB", "Cloudinary", "SCSS"],
-      imageUrl: "https://altizachen-frontend-ivory.vercel.app/logo512.png",
+      imageUrl: "/projects/proj.altizachen.png",
       githubUrl: "https://github.com/ChaimTriebitz/altizachen-frontend",
       githubUrl2: "https://github.com/ChaimTriebitz/altizachen-backend",
       liveUrl: "https://altizachen-frontend-ivory.vercel.app/",
@@ -84,13 +84,13 @@ const ProjectsPage = () => {
               <div className="link">
                 {svgs.globe}
                 <a href={project.liveUrl} target="_blank">
-                  {project.liveUrl}
+                  View live site
                 </a>
               </div>
               <div className="link">
                 {svgs.github}
                 <a href={project.githubUrl} target="_blank">
-                  {project.githubUrl}
+                  View source code
                 </a>
               </div>
 
@@ -98,7 +98,7 @@ const ProjectsPage = () => {
                 <div className="link">
                   {svgs.github}
                   <a href={project.githubUrl2} target="_blank">
-                    {project.githubUrl2}
+                    View backend source
                   </a>
                 </div>
               )}

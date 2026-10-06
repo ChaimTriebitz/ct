@@ -1,14 +1,7 @@
-@use "styles/basics/vars.scss" as *;
-
 main.main {
-   height: calc(100% - var(--header-height) - var(--footer-height));
-   margin-top: var(--header-height);
-   margin-bottom: var(--footer-height);
+   min-height: 0;
+   overflow-y: auto;
    background: var(--main-color);
-
-   section {
-      overflow-y: auto;
-   }
 
    >h1 {
       margin-top: 0.25em;

@@ -1,26 +1,11 @@
-@use '../basics/vars.scss' as *;
-
 header.header {
    background: var(--bars-color);
-   padding: 1em;
-   position: fixed;
-   top: 0;
-   left: 0;
-   right: 0;
-   height: var(--header-height);
-   z-index: 100;
+   padding: 0.5em 1em;
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
 
-   @media (max-width: $mobile) {
-      padding: 0.5em;
-      top: unset;
-      bottom: 0;
-   }
-
    .nav-bar {
       flex: 1;
    }
-
 }

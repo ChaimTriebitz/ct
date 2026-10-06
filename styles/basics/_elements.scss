@@ -28,6 +28,8 @@ html:focus-within {
 }
 
 body {
+   display: grid;
+   grid-template-rows: auto minmax(0, 1fr) auto;
    color: var(--txt-color);
    background-color: var(--main-color);
    text-rendering: optimizeSpeed;

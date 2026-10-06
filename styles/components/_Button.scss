@@ -3,6 +3,7 @@
 .button {
    display: block;
    position: relative;
+   isolation: isolate;
    padding: 0px 6px var(--gap-3) 6px;
    cursor: pointer;
    overflow: hidden;
@@ -71,8 +72,8 @@
       background-color: #00000050;
    }
 
-   &:active,
-   &.active {
+   &.active,
+   &:not(.active):active {
       .button-top {
          transform: translateY(8px);
 

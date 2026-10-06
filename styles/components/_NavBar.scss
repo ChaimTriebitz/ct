@@ -1,7 +1,7 @@
 @use '../basics/vars.scss' as *;
 
 nav.nav-bar {
-   // background: inherit;
+   height: 100%;
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
