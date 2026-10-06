@@ -7,6 +7,17 @@ import { svgs } from "@/assets";
 const ProjectsPage = () => {
   const projects: ProjectProp[] = [
     {
+      title: "ALTIZACHEN MARKETPLACE",
+      description:
+        "Full-stack second-hand marketplace with search, filters, accounts, image uploads and responsive mobile experience",
+      technologies: ["React", "Node.js", "MongoDB", "Cloudinary", "SCSS"],
+      imageUrl: "https://altizachen-frontend-ivory.vercel.app/logo512.png",
+      githubUrl: "https://github.com/ChaimTriebitz/altizachen-frontend",
+      githubUrl2: "https://github.com/ChaimTriebitz/altizachen-backend",
+      liveUrl: "https://altizachen-frontend-ivory.vercel.app/",
+      id: 1,
+    },
+    {
       title: "CRUD TABLE APP",
       description: "Authenticated crud table app with connected to a database",
       technologies: ["React", "Node.js", "MongoDB", "Reducer","context"],
@@ -14,7 +25,7 @@ const ProjectsPage = () => {
       githubUrl: "https://github.com/ChaimTriebitz/crud-table-front",
       githubUrl2: "https://github.com/ChaimTriebitz/crud-table-back",
       liveUrl: "https://vito-front.onrender.com/banks",
-      id: 1,
+      id: 2,
     },
     {
       title: "REAL ESTATE LANDING PAGE",
@@ -24,7 +35,7 @@ const ProjectsPage = () => {
       imageUrl: "/projects/proj.meah-shearim.png",
       githubUrl: "https://github.com/ChaimTriebitz/meah-shearim",
       liveUrl: "https://www.meah-shearim.com/",
-      id: 2,
+      id: 3,
     },
     {
       title: "REAL ESTATE LANDING PAGE 2",
@@ -34,7 +45,7 @@ const ProjectsPage = () => {
       imageUrl: "/projects/proj.shaarei-chesed.png",
       githubUrl: "https://github.com/ChaimTriebitz/shaarei-chesed-frontend",
       liveUrl: "https://shaarei-chesed-frontend.vercel.app/",
-      id: 3,
+      id: 4,
     },
     {
       title: "LAWYER WEBSITE",
@@ -43,7 +54,7 @@ const ProjectsPage = () => {
       imageUrl: "/projects/proj.lawyer.png",
       githubUrl: "https://github.com/ChaimTriebitz/freiman-frontend",
       liveUrl: "https://www.fraiman-law-firm.com/",
-      id: 4,
+      id: 5,
     },
     {
       title: "TRIP EXPERIENCE SHARING APP",
@@ -53,7 +64,7 @@ const ProjectsPage = () => {
       imageUrl: "/projects/proj.trip.png",
       githubUrl: "https://github.com/ChaimTriebitz/trip-frontend/",
       liveUrl: "https://trip-front-end.onrender.com/",
-      id: 5,
+      id: 6,
     },
   ];
 
