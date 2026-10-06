@@ -11,7 +11,7 @@ const ProjectsPage = () => {
       description:
         "Full-stack second-hand marketplace with search, filters, accounts, image uploads and responsive mobile experience",
       technologies: ["React", "Node.js", "MongoDB", "Cloudinary", "SCSS"],
-      imageUrl: "https://altizachen-frontend-ivory.vercel.app/logo512.png",
+      imageUrl: "/logo.svg",
       githubUrl: "https://github.com/ChaimTriebitz/altizachen-frontend",
       githubUrl2: "https://github.com/ChaimTriebitz/altizachen-backend",
       liveUrl: "https://altizachen-frontend-ivory.vercel.app/",
