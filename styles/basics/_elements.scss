@@ -15,8 +15,7 @@
 
 html,
 body {
-   height: 100%;
-   overflow: hidden;
+   min-height: 100%;
 }
 
 html {
@@ -28,6 +27,7 @@ html:focus-within {
 }
 
 body {
+   min-height: 100dvh;
    display: grid;
    grid-template-rows: auto minmax(0, 1fr) auto;
    color: var(--txt-color);
@@ -37,6 +37,7 @@ body {
    font-size: 1em;
    font-family: 'Poppins', sans-serif;
    transition: background-color 0.3s ease, color 0.3s ease;
+   overflow: hidden;
 }
 
 div,
