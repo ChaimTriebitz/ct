@@ -1,4 +1,6 @@
 footer.footer {
+   min-height: fit-content;
+   max-height: fit-content;
    background: var(--bars-color);
    padding: 0.75em 1em;
    justify-content: space-between;
