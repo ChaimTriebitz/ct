@@ -1,4 +1,6 @@
 header.header {
+   min-height: fit-content;
+   max-height: fit-content;
    background: var(--bars-color);
    padding: 0.5em 1em;
    flex-direction: row;
@@ -6,6 +8,7 @@ header.header {
    align-items: center;
 
    .nav-bar {
-      flex: 1;
+      flex: 1 1 auto;
+      min-width: 0;
    }
 }
