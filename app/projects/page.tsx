@@ -14,7 +14,7 @@ const ProjectsPage = () => {
       imageUrl: "/projects/proj.altizachen.png",
       githubUrl: "https://github.com/ChaimTriebitz/altizachen-frontend",
       githubUrl2: "https://github.com/ChaimTriebitz/altizachen-backend",
-      liveUrl: "https://altizachen-frontend-ivory.vercel.app/",
+      liveUrl: "",
       id: 1,
     },
     {
@@ -23,7 +23,7 @@ const ProjectsPage = () => {
       technologies: ["React", "Node.js", "MongoDB", "Reducer", "context"],
       imageUrl: "/projects/proj.crud-table.png",
       githubUrl: "https://github.com/ChaimTriebitz/crud-table-front",
-      githubUrl2: "https://github.com/ChaimTriebitz/crud-table-back",
+      githubUrl2: "https://github.com/ChaimTriebitz/crud-table",
       liveUrl: "https://vito-front.onrender.com/banks",
       id: 2,
     },
@@ -66,6 +66,16 @@ const ProjectsPage = () => {
       liveUrl: "https://trip-front-end.onrender.com/",
       id: 6,
     },
+    {
+      title: "LAW OFFICE WEBSITE",
+      description:
+        "Responsive Hebrew, right-to-left law office website with service pages, search metadata, and a WhatsApp contact flow",
+      technologies: ["Next.js", "TypeScript", "SCSS", "SEO"],
+      imageUrl: "/projects/proj.lewyer.png",
+      githubUrl: "https://github.com/ChaimTriebitz/law-office-website",
+      liveUrl: "https://bzs-law.co.il",
+      id: 7,
+    },
   ];
 
   return (
@@ -81,12 +91,14 @@ const ProjectsPage = () => {
             <h3>{project.technologies.join(", ")}</h3>
             <p>{project.description}</p>
             <div className="links">
-              <div className="link">
-                {svgs.globe}
-                <a href={project.liveUrl} target="_blank" rel="noreferrer">
-                  View live site
-                </a>
-              </div>
+              {project.liveUrl && (
+                <div className="link">
+                  {svgs.globe}
+                  <a href={project.liveUrl} target="_blank" rel="noreferrer">
+                    View live site
+                  </a>
+                </div>
+              )}
               <div className="link">
                 {svgs.github}
                 <a href={project.githubUrl} target="_blank" rel="noreferrer">
