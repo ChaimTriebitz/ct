@@ -34,7 +34,7 @@ const ProjectsPage = () => {
       technologies: ["HTML", "CSS", "JavaScript"],
       imageUrl: "/projects/proj.meah-shearim.png",
       githubUrl: "https://github.com/ChaimTriebitz/meah-shearim",
-      liveUrl: "https://meah-shearim.vercel.app/",
+      liveUrl: "https://meah-shearim.onrender.com/",
       id: 3,
     },
     {
