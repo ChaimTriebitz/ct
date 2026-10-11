@@ -19,8 +19,15 @@ jobs:
           node-version: 22
           cache: npm
 
-      - name: Install dependencies
-        run: npm ci
+      - name: Install dependencies and regenerate the lockfile
+        run: npm install
+
+      - name: Upload generated lockfile
+        uses: actions/upload-artifact@v4
+        with:
+          name: ct-generated-package-lock
+          path: package-lock.json
+          if-no-files-found: error
 
       - name: Lint
         run: npm run lint

@@ -30,7 +30,7 @@ A personal developer portfolio built to present selected projects, technologies,
 Requirements: Node.js 20.9 or newer and npm.
 
 ~~~bash
-npm ci
+npm install
 npm run dev
 ~~~
 
