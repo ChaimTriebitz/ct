@@ -1,9 +1,9 @@
 @use '../basics/vars.scss' as *;
 
 button.hamberger {
-
    svg {
-      height: 48px;
+      width: 36px;
+      height: 36px;
    }
 
    path {
@@ -12,7 +12,6 @@ button.hamberger {
    }
 
    &.open {
-
       .top_bar,
       .bottom_bar {
          stroke-dashoffset: -650px;
