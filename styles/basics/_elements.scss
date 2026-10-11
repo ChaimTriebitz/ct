@@ -165,6 +165,10 @@ label {
    color: inherit;
 }
 
+[hidden] {
+   display: none !important;
+}
+
 input,
 select,
 textarea {
