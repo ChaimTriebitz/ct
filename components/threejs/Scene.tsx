@@ -28,27 +28,30 @@ export const Scene = () => {
   const ref18 = useRef<Group>(null!);
   const ref19 = useRef<Group>(null!);
 
-  const refs = [
-    ref1,
-    ref2,
-    ref3,
-    ref4,
-    ref5,
-    ref6,
-    ref7,
-    ref8,
-    ref9,
-    ref10,
-    ref11,
-    ref12,
-    ref13,
-    ref14,
-    ref15,
-    ref16,
-    ref17,
-    ref18,
-    ref19,
-  ];
+  const refs = useMemo(
+    () => [
+      ref1,
+      ref2,
+      ref3,
+      ref4,
+      ref5,
+      ref6,
+      ref7,
+      ref8,
+      ref9,
+      ref10,
+      ref11,
+      ref12,
+      ref13,
+      ref14,
+      ref15,
+      ref16,
+      ref17,
+      ref18,
+      ref19,
+    ],
+    []
+  );
 
   const icons = useMemo(
     () =>

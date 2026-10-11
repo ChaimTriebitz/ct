@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Portfolio",
-  description: "A portfolio of projects and technologies I've worked with",
-  applicationName: "CT Portfolio",
+  title: "Chaim Triebitz | Full-Stack Developer",
+  description: "Chaim Triebitz is a full-stack developer building responsive web applications with React, Next.js, TypeScript, Node.js, and modern UI technologies.",
+  applicationName: "Chaim Triebitz Portfolio",
   manifest: "/manifest.json",
   icons: {
     icon: [
@@ -53,7 +53,7 @@ export const metadata = {
     ],
   },
   appleWebApp: {
-    title: "CT site",
+    title: "Chaim Triebitz | Full-Stack Developer",
     statusBarStyle: "default",
     startupImage: ["/apple-icon.png"],
   },
@@ -61,7 +61,7 @@ export const metadata = {
     type: "website",
     locale: "en_US",
     url: "https://ct-site.dev",
-    siteName: "CT site",
+    siteName: "Chaim Triebitz Portfolio",
     title: "CT site",
     description:
       "My portfolio showcases my work in web development, including projects, technologies, and skills. Explore my projects and get in touch.",

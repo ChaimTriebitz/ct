@@ -13,7 +13,6 @@ const ProjectsPage = () => {
       technologies: ["React", "Node.js", "MongoDB", "Cloudinary", "SCSS"],
       imageUrl: "/projects/proj.altizachen.png",
       githubUrl: "https://github.com/ChaimTriebitz/altizachen-frontend",
-      githubUrl2: "https://github.com/ChaimTriebitz/altizachen-backend",
       liveUrl: "",
       id: 1,
     },
