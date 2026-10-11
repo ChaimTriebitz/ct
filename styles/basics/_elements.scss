@@ -27,6 +27,7 @@ html:focus-within {
 }
 
 body {
+   height: 100dvh;
    min-height: 100dvh;
    display: grid;
    grid-template-rows: auto minmax(0, 1fr) auto;
