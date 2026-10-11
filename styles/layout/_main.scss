@@ -1,15 +1,32 @@
 main.main {
    min-width: 0;
    min-height: 0;
-   height: auto;
+   height: 100%;
+   align-self: stretch;
    overflow-y: auto;
    overflow-x: hidden;
    background: var(--main-color);
 
-   >h1 {
+   > h1 {
       margin-top: 0.25em;
       text-align: center;
       color: var(--txt-color);
       animation: gradientFlow 8s ease infinite;
+   }
+
+   &.projects {
+      min-height: 0;
+      overflow-y: auto;
+      overscroll-behavior-y: contain;
+
+      > section {
+         flex: 0 0 auto;
+         min-height: max-content;
+         padding-bottom: 1em;
+      }
+
+      .flip-card {
+         flex: 0 0 auto;
+      }
    }
 }
