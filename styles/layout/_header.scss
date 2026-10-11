@@ -1,14 +1,20 @@
 header.header {
-   min-height: fit-content;
+   min-height: 0;
    max-height: fit-content;
    background: var(--bars-color);
-   padding: 0.5em 1em;
+   padding: 0.25em 0.75em;
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
+   gap: 0.5em;
 
    .nav-bar {
       flex: 1 1 auto;
       min-width: 0;
+      min-height: 0;
+   }
+
+   > * {
+      flex-shrink: 0;
    }
 }
