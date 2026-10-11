@@ -53,7 +53,7 @@ export const metadata = {
     ],
   },
   appleWebApp: {
-    title: "Chaim Triebitz | Full-Stack Developer",
+    title: "CT Portfolio",
     statusBarStyle: "default",
     startupImage: ["/apple-icon.png"],
   },
@@ -62,9 +62,9 @@ export const metadata = {
     locale: "en_US",
     url: "https://ct-site.dev",
     siteName: "Chaim Triebitz Portfolio",
-    title: "CT site",
+    title: "Chaim Triebitz | Full-Stack Developer",
     description:
-      "My portfolio showcases my work in web development, including projects, technologies, and skills. Explore my projects and get in touch.",
+      "Chaim Triebitz is a full-stack developer building responsive web applications with React, Next.js, TypeScript, Node.js, and modern UI technologies.",
     images: [
       {
         url: "/web-app-manifest-512x512.png",
@@ -76,9 +76,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "CT site",
+    title: "Chaim Triebitz | Full-Stack Developer",
     description:
-           "My portfolio showcases my work in web development, including projects, technologies, and skills. Explore my projects and get in touch.",
+           "Chaim Triebitz is a full-stack developer building responsive web applications with React, Next.js, TypeScript, Node.js, and modern UI technologies.",
     images: ["/web-app-manifest-512x512.png"],
     creator: "@ct_sites",
   },

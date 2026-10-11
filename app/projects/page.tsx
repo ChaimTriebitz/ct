@@ -18,8 +18,8 @@ const ProjectsPage = () => {
     },
     {
       title: "CRUD TABLE APP",
-      description: "Authenticated crud table app with connected to a database",
-      technologies: ["React", "Node.js", "MongoDB", "Reducer", "context"],
+      description: "Authenticated bank and lender directory with searchable tables, sorting, and owner-scoped create, update, and delete operations",
+      technologies: ["React", "Node.js", "MongoDB", "Context API", "useReducer"],
       imageUrl: "/projects/proj.crud-table.png",
       githubUrl: "https://github.com/ChaimTriebitz/crud-table-front",
       githubUrl2: "https://github.com/ChaimTriebitz/crud-table",
@@ -48,7 +48,7 @@ const ProjectsPage = () => {
     },
     {
       title: "LAWYER WEBSITE",
-      description: "Website for a lawyer with some cool animations",
+      description: "Responsive law-firm website with animated sections and clear contact paths",
       technologies: ["animation", "SCSS", "responsive"],
       imageUrl: "/projects/proj.lawyer.png",
       githubUrl: "https://github.com/ChaimTriebitz/freiman-frontend",
@@ -58,8 +58,8 @@ const ProjectsPage = () => {
     {
       title: "TRIP EXPERIENCE SHARING APP",
       description:
-        "Trip experience sharing app with uploading images to cloudinary games and other",
-      technologies: ["cloudinary", "canvas", "express"],
+        "Trip experience-sharing app with image uploads and interactive canvas-based features",
+      technologies: ["React", "Express", "Cloudinary", "Canvas API"],
       imageUrl: "/projects/proj.trip.png",
       githubUrl: "https://github.com/ChaimTriebitz/trip-frontend/",
       liveUrl: "https://trip-front-end.onrender.com/",
