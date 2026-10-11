@@ -34,7 +34,7 @@ const ProjectsPage = () => {
       technologies: ["HTML", "CSS", "JavaScript"],
       imageUrl: "/projects/proj.meah-shearim.png",
       githubUrl: "https://github.com/ChaimTriebitz/meah-shearim",
-      liveUrl: "https://www.meah-shearim.com/",
+      liveUrl: "https://meah-shearim.vercel.app/",
       id: 3,
     },
     {
@@ -83,13 +83,13 @@ const ProjectsPage = () => {
             <div className="links">
               <div className="link">
                 {svgs.globe}
-                <a href={project.liveUrl} target="_blank">
+                <a href={project.liveUrl} target="_blank" rel="noreferrer">
                   View live site
                 </a>
               </div>
               <div className="link">
                 {svgs.github}
-                <a href={project.githubUrl} target="_blank">
+                <a href={project.githubUrl} target="_blank" rel="noreferrer">
                   View source code
                 </a>
               </div>
@@ -97,7 +97,7 @@ const ProjectsPage = () => {
               {project.githubUrl2 && (
                 <div className="link">
                   {svgs.github}
-                  <a href={project.githubUrl2} target="_blank">
+                  <a href={project.githubUrl2} target="_blank" rel="noreferrer">
                     View backend source
                   </a>
                 </div>
